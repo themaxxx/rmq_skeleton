@@ -10,6 +10,11 @@ background.n = 5
 
 @background.task
 def work(class_obj):
+    """
+        Multi-thread work method.
+        Class passed as parameter.
+        Instance created dynamically
+    """
     msg_inst = class_obj()
     msg_inst.publish_message()
 

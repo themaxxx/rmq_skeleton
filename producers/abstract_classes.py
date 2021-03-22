@@ -5,7 +5,10 @@ from settings import *
 
 
 class AbstractMessageProducer(object):
-
+    """
+        Abstract class producer.
+        Implements connection handling, channel configuration, queue declaration, producer kind handling
+    """
     def __init__(self):
         self._connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
         self._channel = self._connection.channel()
