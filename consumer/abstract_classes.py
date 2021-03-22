@@ -2,7 +2,10 @@ from abc import abstractmethod
 
 
 class AbstractMessageHandler(object):
-
+    """
+        Abstract class Message Handler.
+        Handles received messages by kind.
+    """
     def __init__(self, message):
         self._message = message
         self._message_kind = None
