@@ -1,10 +1,10 @@
 import pika
 import json
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 from settings import *
 
 
-class AbstractMessageProducer(object):
+class AbstractMessageProducer(ABC):
     """
         Abstract class producer.
         Implements connection handling, channel configuration, queue declaration, producer kind handling

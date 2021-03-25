@@ -1,7 +1,7 @@
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
 
-class AbstractMessageHandler(object):
+class AbstractMessageHandler(ABC):
     """
         Abstract class Message Handler.
         Handles received messages by kind.
